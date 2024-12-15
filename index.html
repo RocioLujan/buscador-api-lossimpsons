@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Simpsons</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.png" alt="Logo Los Simpsons" id="header-logo" />
+    </header>
+    <main>
+      <h1 id="titulo-principal">API de Los Simpsons</h1>
+      <h3>Explora personajes icónicos de Springfield</h3>
+      <p class="descripcion">
+        Bienvenido a la API de Los Simpsons. En esta página podrás encontrar
+        personajes icónicos de la famosa serie de animación "Los Simpsons". Para
+        comenzar, ingresa la palabra "quotes" en el campo de texto y presiona el
+        botón "Buscar". Luego haz clic sobre cada personaje para ver su frase.
+      </p>
+      <form id="formulario">
+        <label>https://thesimpsonsquoteapi.glitch.me/</label>
+        <input type="text" id="entrada-url" required />
+        <button type="submit">Buscar</button>
+      </form>
+      <div id="notificacion"></div>
+      <div id="contenedor-tabla">
+        <h2 id="titulo-tabla">¡Vamos! ¡Haz clic!</h2>
+        <button onclick="window.print()" id="boton-imprimir">Imprimir</button>
+        <table id="tabla-personajes">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Frase</th>
+              <th>Foto</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <img src="./img/logo.png" alt="Logo Los Simpsons" id="footer-logo" />
+      <p class="texto-pie">
+        "La vida es mejor con una dosis de humor amarillo."
+      </p>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
