@@ -17,7 +17,7 @@
         Bienvenido a la API de Los Simpsons. En esta página podrás encontrar
         personajes icónicos de la famosa serie de animación "Los Simpsons". Para
         comenzar, ingresa la palabra "quotes" en el campo de texto y presiona el
-        botón "Buscar". Luego haz clic sobre cada personaje para ver su frase.
+        botón "Buscar" y obtenedrás una lista de personajes con sus frases más famosas.
       </p>
       <form id="formulario">
         <label>https://thesimpsonsquoteapi.glitch.me/</label>
@@ -27,8 +27,8 @@
       <div id="notificacion"></div>
       <div id="contenedor-tabla">
         <h2 id="titulo-tabla">¡Vamos! ¡Haz clic!</h2>
-        <button onclick="window.print()" id="boton-imprimir">Imprimir</button>
-        <table id="tabla-personajes">
+        <button onclick="window.print()" id="boton-imprimir" style="display: none;">Imprimir</button>
+        <table id="tabla-personajes" style="display: none;">
           <thead>
             <tr>
               <th>Nombre</th>
